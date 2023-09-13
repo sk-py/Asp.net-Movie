@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="Booking.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <asp:ContentPlaceHolder ID="head" runat="server">
+          <link rel="stylesheet" href="StyleSheet1.css" />  
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div>
+                    <img src="logoipsum-257.svg" />
+                </div>
+                <div id="menu_li">
+                    <ul>
+                        <li><a href="WebForm1.aspx">Home</a></li>
+                        <li><a href="WebForm2.aspx">Movies</a></li>
+                        <li><a href="WebForm3.aspx">Booking</a></li>
+                        <li>Contact</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <div id="dynamic_view">
+                     <button runat="server" id="menuUname" visible="false"><a href="/">Username</a></button>
+                     <button runat="server" id="menuSignin" visible="true"><a href="/">Signin</a></button>
+                </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <div>
+
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
